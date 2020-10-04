@@ -1,11 +1,10 @@
-# -*- coding: utf-8 -*-
 """
-Created on Mon Mar 27 18:43:46 2017
+@author: jhhalls
 
 Decision tree regression
-Import data, fit decision tree regression and predict new values
-
-@author: Ilaria
+1. Import data, 
+2. fit decision tree regression and
+3. predict new values
 """
 
 # Data Preprocessing Template
