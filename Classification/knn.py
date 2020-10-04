@@ -1,11 +1,16 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Sat Apr  1 12:38:03 2017
+@author : jhhalls
 
-K-NN classifier
+K-Nearest Neighbors classifier
 
-@author: Ilaria
+1. Import the Libraries
+2. Import the data
+3. Split the data
+4. Scale the data
+5. Build KNN and fit the data
+6. Predict the outcome
+7. Visualize the results
+
 """
 
 
