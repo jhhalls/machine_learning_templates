@@ -1,6 +1,13 @@
-# Data Preprocessing Template
-#import the dataset and split between train and test set
+'''
+@author : jhhalls
+'''
 
+# Data Preprocessing Template
+'''
+Import the dataset,
+split between train and test set,
+Standardization of the data
+'''
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
