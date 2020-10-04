@@ -1,13 +1,18 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu Mar 23 11:08:12 2017
+
+@author: jhhalls
 
 Multiple linear regression
-Import dataset and encode categorical variables, fit multiple linear regression
-find best model using backward elimination
 
-@author: Ilaria
+1. Import the Libraries
+2. Import the dataset
+3. Encode the Categorical features
+4. Standardize the data (feature scaling)
+5. Build the model and fit the data
+6. Make predictions
+7. Visualize the predictions of train and test sets.
+8. Build Optimal model using Backward Elimination
+
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -46,24 +51,30 @@ y_pred = regressor.predict(X_test)
 
 #build optimal model using Backward Elimination
 import statsmodels.formula.api as sm
+
 #add constant column with all 1 to have a b0
 X = np.append(arr = np.ones((50,1)).astype(int), values = X, axis = 1)
+
 #fit model with all predictors
 X_opt = X[:,[0,1,2,3,4,5]]
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 regressor_OLS.summary()
+
 #let's remove the variable with the highest  pvalue
 X_opt = X[:,[0,1,3,4,5]]
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 regressor_OLS.summary()
+
 #let's remove the variable with the highest  pvalue
 X_opt = X[:,[0,3,4,5]]
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 regressor_OLS.summary()
+
 #let's remove the variable with the highest  pvalue
 X_opt = X[:,[0,3,5]]
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 regressor_OLS.summary()
+
 #let's remove the variable with the highest  pvalue
 X_opt = X[:,[0,3,5]]
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
