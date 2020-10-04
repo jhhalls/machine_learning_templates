@@ -1,5 +1,16 @@
-# Regression Template
-#template for regression, fill in with your rergressor and visualize results
+'''
+@author: jhhalls
+
+ Regression Template
+1. Import the libraries
+2. Import the data
+3. split
+4. Sclae the data
+5. Build the Model
+6. Predict the result
+7. Visualize the results
+
+'''
 
 # Importing the libraries
 import numpy as np
