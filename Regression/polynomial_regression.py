@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Mon Mar 27 13:50:26 2017
+@author: jhhalls
 
 Polynomial regression
-Use both a linear and a poliinomial regression to show the different results
+Use both a linear and a polynomial regression to show the difference between the results
 
 
-@author: Ilaria
 """
 
 # Data Preprocessing Template
@@ -33,7 +30,7 @@ from sklearn.linear_model import LinearRegression
 lin_reg = LinearRegression()
 lin_reg.fit(X,y)
 
-#fitting polinomial regression 
+#fitting polynomial regression 
 from sklearn.preprocessing import PolynomialFeatures
 poly_reg =  PolynomialFeatures(degree = 4)
 X_poli = poly_reg.fit_transform(X)
