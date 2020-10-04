@@ -1,17 +1,19 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Fri Mar 10 16:49:42 2017
-
-@author: Ilaria
+@author: jhhalls
 
 SIMPLE LINEAR REGRESSION
-Use the data preprocessing template from part 1, apply 
-linear regression and fit linear model on the training set
+
+1. Import the Libraries
+2. Import the dataset
+3. Split the data between train and test
+4. Standardize the data (feature scaling)
+5. Build the model and fit the data
+6. Make predictions
+7. Visualize the predictions of train and test sets.
 
 """
 
-# Data Preprocessing Template
+# Simple Linear Regression Template
 
 # Importing the libraries
 import numpy as np
