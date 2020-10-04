@@ -1,11 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu Mar 30 13:43:41 2017
+@author : jhhalls
 
 Random forest regression
-
-@author: Ilaria
+1. Import the libraries
+2. Import the data
+3. Split
+4. Build the model
+5. Predict the result
 """
 
 
