@@ -1,6 +1,15 @@
+'''
+@author : jhhalls
+'''
+
+
 # Data Preprocessing
-#this code imports the dataset, convert missing data in their mean and
-#encode dependent and indipendent variable 
+
+'''
+This code imports the dataset, impute missing data with their mean and
+encode dependent and independent variable 
+'''
+
 
 # Importing the libraries
 import numpy as np
